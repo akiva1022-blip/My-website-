@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JARVIS V1</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header><div class="orb"></div><div><h1>JARVIS</h1><span>PERSONAL AI ASSISTANT · V1</span></div><div class="status">● ONLINE</div></header>
+  <main>
+    <section class="hero"><p class="eyebrow">GOOD TO SEE YOU</p><h2>How can I help?</h2><p class="sub">Talk to Jarvis, type a command, or use the controls below.</p></section>
+    <section id="chat" class="chat"></section>
+    <div class="inputrow">
+      <button id="mic" class="icon" title="Voice input">🎙️</button>
+      <input id="input" placeholder="Tell Jarvis what you need..." autocomplete="off">
+      <button id="send">SEND</button>
+    </div>
+    <section class="cards">
+      <button class="card" data-cmd="Give me a quick plan for today."><b>◈</b><span>Plan my day</span></button>
+      <button class="card" data-cmd="What can you help me with?"><b>◉</b><span>What can you do?</span></button>
+      <button class="card" data-cmd="Create a task to follow up tomorrow."><b>✓</b><span>Create a task</span></button>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
